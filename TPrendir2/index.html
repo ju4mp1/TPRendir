@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Examen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="formulario">
+        <h1>Formulario</h1>
+        <form id="myForm">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Ingresa tu nombre"
+          />
+          <br />
+          <label for="apodo">Apodo:</label>
+          <input
+            type="text"
+            id="apodo"
+            name="apodo"
+            placeholder="Ingresa tu apodo"
+          />
+          <br />
+          <label for="imagen">Imagen:</label>
+          <input type="file" id="imagen" name="imagen" />
+          <br />
+          <label for="descripcion">Descripción:</label>
+          <input
+            type="text"
+            id="descripcion"
+            name="descripcion"
+            placeholder="Ingresa una descripción"
+          />
+          <br />
+          <button type="button" onclick="enviar()">Enviar</button>
+        </form>
+      </div>
+      <div class="tarjeta">
+        <h1>Detalles</h1>
+        <div id="tarjetanombre" class="info"></div>
+        <div id="tarjetaapodo" class="info"></div>
+        <div id="tarjetaimagen" class="info"></div>
+        <div id="tarjetadescripcion" class="info"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
